@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Memories Project Portfolio
+    </title>    
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+
+</head>
+<body>
+
+    <!-- BOMB Field -->
+    
+
+    <!-- BOMB Field -->
+
+
+    <nav class="navbar navbar-expand navbar-dark bg-dark" aria-label="Second navbar example">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Memories Project</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample02" aria-controls="navbarsExample02" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+             <div class="collapse navbar-collapse" id="navbarsExample02">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#portfolio">Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+                <form role="search">
+                    <input class="form-control" type="search" placeholder="Search" aria-label="Search">
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Banner -->
+
+    <section class="py-5 text-center container">
+        <div class="row py-lg-5">
+          <div class="col-lg-6 col-md-8 mx-auto">
+            <h1 class="fw-light" id="portfolio">Project Samples</h1>
+            <p class="lead text-body-secondary">Memories gathered from the stories of the mind.</p>
+          </div>
+        </div>
+    </section>
+
+    <!-- Project Cards -->
+
+    <div class="album py-5 bg-body-tertiary">
+        <div class="container">
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+                <div class="col">
+                    <div class="card shadow-sm proj" onclick="colorChange('#dc9181')">
+                        <img src="project1.jpg" width="100%" height="300">
+                        <div class="card-body">
+                            <h5>City of Fanatical Hope</h5>
+                            <p class="card-text">A story born to challenge the idea of negative concepts and positive concepts. It is a story that hopes to strike a balance in a person's way of life and reflect the signs of imbalance.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="btn-group">
+                                    <button type="button" class="btn btn-sm btn-outline-secondary" id="modal1">Details</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card shadow-sm proj" onclick="colorChange('#ee6520')">
+                        <img src="project2.jpg" width="100%" height="300">
+                        <div class="card-body">
+                            <h5>Clockwork and Its Broken Time</h5>
+                            <p class="card-text">What does it mean for time to go forward? In the first place, do people percieve time the same way as you do? This is a short story about how a person dances with dangerous thoughts and time itself.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="btn-group">
+                                    <button type="button" class="btn btn-sm btn-outline-secondary" id="modal2">Details</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card shadow-sm proj" onclick="colorChange('#005cbc')">
+                        <img src="project3.jpg" width="100%" height="300">
+                        <div class="card-body">
+                            <h5>The Eternity That Never Lasted</h5>
+                            <p class="card-text">An eternity. The concept of time may as well cease to exist. What can people do with their lives in this moment? Not much. After all, this is a story that breaks this seemingly infinite moment.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="btn-group">
+                                    <button type="button" class="btn btn-sm btn-outline-secondary" id="modal3">Details</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Forms -->
+    
+    <section class="py-5 text-center container">
+        <div class="row py-lg-5">
+          <div class="col-lg-6 col-md-8 mx-auto">
+            <h1 class="fw-light" id="contact">Contact Us</h1>
+          </div>
+        </div>
+    </section>
+    
+    <div class="container-sm">
+    <form class="row g-3 needs-validation form" action="malisa-miguel-webdevte1.html" onsubmit="alert('Message successfully sent!')">
+        <div class="row">
+            <label for="validationCustom01" class="form-label">Name</label>
+            <input type="text" class="form-control" id="validationCustom01" placeholder="Mark Shark" required>
+          </div>
+          <div class="row">
+            <label for="validationCustom02" class="form-label">Email</label>
+            <input type="email" class="form-control" id="validationCustom02" placeholder="mark@gmail.com" required>
+          </div>
+          <div class="row">
+              <label for="" class="form-label">Message</label>
+              <textarea class="form-control" name="" id="" rows="3" placeholder="Talk to us..." required></textarea>
+          </div>
+          <div class="col-12" align="center">
+            <button class="btn btn-primary" type="submit">Send Message</button>
+        </div>
+    </form>
+    </div>
+
+    <section class="py-5 text-center container">
+        
+    </section>
+    
+    <!-- Modals -->
+
+    <div class="modal modal-sheet position-dynamic bg-body-secondary p-4 py-md-5" tabindex="-1" role="dialog" id="proj1">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content rounded-4 shadow">
+            <div class="modal-header border-bottom-0">
+              <h1 class="modal-title fs-5">City of Fanatical Hope</h1>
+            </div>
+            <div class="modal-body py-0">
+              <p>Hope is what gives the people power to keep moving forward. As long as the people have hope, nothing can stop them from raising their ideal kingdom. <br><br> But, what does it mean to have hope? People can lose hope but can they have <i>too much</i> of it? What does it mean for someone to have too much hope? What will happen to a city if it has too much hope? <br><br> <b>In a city built upon this single concept, will it stand as strong as the fervor they show? </b></p>
+            </div>
+            <div class="modal-footer flex-column align-items-stretch w-100 gap-2 pb-3 border-top-0">
+            <span class="close1">
+              <button type="button" class="btn btn-lg btn-secondary" data-bs-dismiss="modal">Close</button>
+            </span>
+            </div>
+          </div>
+        </div>
+    </div>
+    
+    <div class="modal modal-sheet position-dynamic bg-body-secondary p-4 py-md-5" tabindex="-1" role="dialog" id="proj2">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content rounded-4 shadow">
+            <div class="modal-header border-bottom-0">
+              <h1 class="modal-title fs-5">Clockwork and Its Broken Time</h1>
+            </div>
+            <div class="modal-body py-0">
+              <p>Time for everyone moves only in a single direction. Toward the future and leaving behind the past, sealing our previous actions in the bottle of history. However... is this truly the case? Much like how an ant cannot percieve the three-dimentional plain, how can mere humans say that time cannot go backward? Or maybe even... <b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;stop.</b> <br><br> The flow of time that differs from person to person. A flow of time that can devour other instances. <i>The time that can consumes life of a person.</i></p>
+            </div>
+            <div class="modal-footer flex-column align-items-stretch w-100 gap-2 pb-3 border-top-0">
+            <span class="close2">
+              <button type="button" class="btn btn-lg btn-secondary" data-bs-dismiss="modal">Close</button>
+            </span>
+            </div>
+          </div>
+        </div>
+    </div>
+
+    <div class="modal modal-sheet position-dynamic bg-body-secondary p-4 py-md-5" tabindex="-1" role="dialog" id="proj3">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content rounded-4 shadow">
+            <div class="modal-header border-bottom-0">
+              <h1 class="modal-title fs-5">The Eternity That Never Lasted</h1>
+            </div>
+            <div class="modal-body py-0">
+              <p><i>"Eternal Happiness."</i> What a wonderful ring it has in the ears. In a world where <b>[Eternity]</b> is exists, the people would venture towards their dreams and fulfill their deepest wishes. What can stop the people now if time was never a concern? <br><br> Frolicking and frolicking... <br> Enjoying their neverending lives... <br> <i>The people never realized what they had lost.</i></p>
+            </div>
+            <div class="modal-footer flex-column align-items-stretch w-100 gap-2 pb-3 border-top-0">
+            <span class="close3">
+              <button type="button" class="btn btn-lg btn-secondary" data-bs-dismiss="modal">Close</button>
+            </span>
+            </div>
+          </div>
+        </div>
+    </div>
+    
+    <!-- JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="index.js"></script>
+
+</body>
+</html>

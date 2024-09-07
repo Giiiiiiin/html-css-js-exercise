@@ -1,0 +1,25 @@
+.modal-sheet .modal-dialog {
+    width: 380px;
+    transition: bottom .75s ease-in-out;
+    text-align: justify;
+  }
+  .modal-sheet .modal-footer {
+    padding-bottom: 2rem;
+  }
+
+img{
+    object-fit: contain;
+}
+
+p.card-text{
+    text-align: justify;
+}
+
+
+.proj:hover{
+
+background-color: #c7abff;
+transform: 1.01;
+
+}
+
